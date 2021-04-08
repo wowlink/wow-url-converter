@@ -1,0 +1,3 @@
+interface WowContext {
+    type: string;
+}

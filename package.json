@@ -1,0 +1,24 @@
+{
+  "name": "wow-url-converter",
+  "version": "1.0.0",
+  "description": "URL conversion module for WowLink",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wowlink/wow-url-converter.git"
+  },
+  "author": "Tianhao Zhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wowlink/wow-url-converter/issues"
+  },
+  "homepage": "https://github.com/wowlink/wow-url-converter#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
