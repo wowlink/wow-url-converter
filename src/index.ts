@@ -1,4 +1,7 @@
-export default (): string => {
-    const out = "Hello World"
-    return out;
+class WowUrlConverter {
+    constructor() {
+        console.log("Hello from Wow URL Converter:)");
+    }
 }
+
+export default WowUrlConverter;
