@@ -1,3 +1,4 @@
 interface WowContext {
-    type: string;
+    mappingSource: "github" | "gist" | "local" | "custom";
+    wowMapping: Record<string, string>;
 }

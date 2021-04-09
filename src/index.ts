@@ -4,4 +4,4 @@ class WowUrlConverter {
     }
 }
 
-export default WowUrlConverter;
+export { WowUrlConverter };
