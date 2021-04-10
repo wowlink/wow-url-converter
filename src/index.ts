@@ -1,6 +1,10 @@
+import { WowMappingsFetchResponse } from "wow-interface";
+
 class WowUrlConverter {
-    constructor() {
-        console.log("Hello from Wow URL Converter:)");
+    wowMappingsFetchResponse_: WowMappingsFetchResponse
+
+    constructor(wowMappingsFetchResponse: WowMappingsFetchResponse) {
+        this.wowMappingsFetchResponse_ = wowMappingsFetchResponse;
     }
 }
 
