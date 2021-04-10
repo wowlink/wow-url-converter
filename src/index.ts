@@ -1,6 +1,11 @@
-import { WowConvertRequest, WowConvertResponse, WowMappingsFetchResponse } from "wow-interface";
+import {
+    WowConvertRequest,
+    WowConvertResponse,
+    WowMappingsFetchResponse,
+    WowLinkConverter
+} from "wow-interface";
 
-class WowUrlConverter {
+class BasicWowLinkConverter implements WowLinkConverter {
     wowMappingsFetchResponse_: WowMappingsFetchResponse
 
     constructor(wowMappingsFetchResponse: WowMappingsFetchResponse) {
@@ -15,4 +20,4 @@ class WowUrlConverter {
     }
 }
 
-export { WowUrlConverter };
+export { BasicWowLinkConverter };
