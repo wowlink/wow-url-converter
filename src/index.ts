@@ -1,20 +1,20 @@
 import {
-    WowConvertRequest,
-    WowConvertResponse,
-    WowLookupFetchResponse,
-    WowLinkConverter
+    WowUrlConvertRequest,
+    WowUrlConvertResponse,
+    WowUrlConverter,
+    WowUrlConverterConfig
 } from "wow-interface";
 
-class BasicWowLinkConverter implements WowLinkConverter {
-    wowLookupFetchResponse_: WowLookupFetchResponse;
+class BasicWowLinkConverter implements WowUrlConverter {
+    config_: WowUrlConverterConfig;
 
-    constructor(WowLookupFetchResponse: WowLookupFetchResponse) {
-        this.wowLookupFetchResponse_ = WowLookupFetchResponse;
+    constructor(config: WowUrlConverterConfig) {
+        this.config_ = config;
     }
 
-    convert(req: WowConvertRequest): WowConvertResponse {
-        const res: WowConvertResponse = {
-            fullLink: "na",
+    convert(req: WowUrlConvertRequest): WowUrlConvertResponse {
+        const res: WowUrlConvertResponse = {
+            fullUrl: "na",
         };
         return res;
     }
