@@ -1,15 +1,15 @@
 import {
     WowConvertRequest,
     WowConvertResponse,
-    WowMappingsFetchResponse,
+    WowLookupFetchResponse,
     WowLinkConverter
 } from "wow-interface";
 
 class BasicWowLinkConverter implements WowLinkConverter {
-    wowMappingsFetchResponse_: WowMappingsFetchResponse
+    wowLookupFetchResponse_: WowLookupFetchResponse
 
-    constructor(wowMappingsFetchResponse: WowMappingsFetchResponse) {
-        this.wowMappingsFetchResponse_ = wowMappingsFetchResponse;
+    constructor(WowLookupFetchResponse: WowLookupFetchResponse) {
+        this.wowLookupFetchResponse_ = WowLookupFetchResponse;
     }
 
     convert(req: WowConvertRequest): WowConvertResponse {
