@@ -13,9 +13,14 @@ class BasicWowLinkConverter implements WowUrlConverter {
     }
 
     convert(req: WowUrlConvertRequest): WowUrlConvertResponse {
+        const lookup: Record<string, string> = this.config_.fetcherResponse.wowMapping;
+        const wowlink: string = req.wowUrl;
         const res: WowUrlConvertResponse = {
-            fullUrl: "na",
+            fullUrl: "/",
         };
+        if (wowlink in lookup) {
+            res.fullUrl = lookup[wowlink];
+        }
         return res;
     }
 }
