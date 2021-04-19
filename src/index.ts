@@ -1,28 +1,16 @@
 import {
-    WowUrlConvertRequest,
-    WowUrlConvertResponse,
     WowUrlConverter,
-    WowUrlConverterConfig
+    WowUrlConverterConfig,
+    BuiltInWowUrlConverterType
 } from "wow-interface";
+import { BasicWowLinkConverter } from "./builtin_converters/basic_converter";
 
-class BasicWowLinkConverter implements WowUrlConverter {
-    config_: WowUrlConverterConfig;
-
-    constructor(config: WowUrlConverterConfig) {
-        this.config_ = config;
+const WowUrlConverterFactory = (type: BuiltInWowUrlConverterType, config: WowUrlConverterConfig): WowUrlConverter => {
+    if (type == BuiltInWowUrlConverterType.Basic) {
+        return new BasicWowLinkConverter(config);
+    } else {
+        throw new Error(`Unknown converter type ${type}.`);
     }
+};
 
-    convert(req: WowUrlConvertRequest): WowUrlConvertResponse {
-        const lookup: Record<string, string> = this.config_.fetcherResponse.wowMapping;
-        const wowlink: string = req.wowUrl;
-        const res: WowUrlConvertResponse = {
-            fullUrl: "/",
-        };
-        if (wowlink in lookup) {
-            res.fullUrl = lookup[wowlink];
-        }
-        return res;
-    }
-}
-
-export { BasicWowLinkConverter };
+export { WowUrlConverterFactory };
