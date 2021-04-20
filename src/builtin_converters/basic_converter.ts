@@ -3,7 +3,7 @@ import {
     WowUrlConvertResponse,
     WowUrlConverter,
     WowUrlConverterConfig,
-} from "wow-interface";
+} from "@wowlink/wow-interface";
 
 class BasicWowLinkConverter implements WowUrlConverter {
     config_: WowUrlConverterConfig;

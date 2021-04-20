@@ -26,6 +26,6 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "wow-interface": "file:../wow-interface"
+    "@wowlink/wow-interface": "^1.0.0"
   }
 }
