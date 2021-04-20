@@ -2,7 +2,7 @@ import {
     WowUrlConverter,
     WowUrlConverterConfig,
     BuiltInWowUrlConverterType
-} from "wow-interface";
+} from "@wowlink/wow-interface";
 import { BasicWowLinkConverter } from "./builtin_converters/basic_converter";
 
 const WowUrlConverterFactory = (type: BuiltInWowUrlConverterType, config: WowUrlConverterConfig): WowUrlConverter => {

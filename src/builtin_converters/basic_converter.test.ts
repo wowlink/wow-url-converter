@@ -1,4 +1,4 @@
-import { WowUrlConverter, WowUrlConverterConfig } from "wow-interface";
+import { WowUrlConverter, WowUrlConverterConfig } from "@wowlink/wow-interface";
 import { BasicWowLinkConverter } from "./basic_converter";
 
 describe("Basic converter tests", () => {
