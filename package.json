@@ -6,11 +6,12 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wowlink/wow-url-converter.git"
+    "url": "https://github.com/wowlink/wow-url-converter.git"
   },
   "author": "Tianhao Zhou",
   "license": "MIT",
@@ -21,11 +22,13 @@
   "devDependencies": {
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-typescript": "^7.13.0",
+    "@semantic-release/git": "^9.0.0",
     "@types/jest": "^26.0.22",
     "jest": "^26.6.3",
+    "semantic-release": "^17.4.2",
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "@wowlink/wow-interface": "^1.0.0"
+    "@wowlink/wow-interface": "^1.1.2"
   }
 }
