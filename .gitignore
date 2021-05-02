@@ -108,6 +108,3 @@ lib/
 
 # VS code temp files
 .devcontainer/
-
-# Credential files
-/.npmrc
