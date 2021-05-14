@@ -19,5 +19,9 @@ jobs:
         run: npm ci && npm run build
       - run: npx semantic-release
         env:
+          GIT_AUTHOR_NAME: ${{ secrets.GIT_ACT_NAME }}
+          GIT_AUTHOR_EMAIL: ${{ secrets.GIT_ACT_EMAIL }}
+          GIT_COMMITTER_NAME: ${{ secrets.GIT_ACT_NAME }}
+          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_ACT_EMAIL }}
           GITHUB_TOKEN: ${{ secrets.GH_PKG_UPLOAD_TOKEN }}
           NPM_TOKEN: ${{ secrets.GH_PKG_UPLOAD_TOKEN }}
