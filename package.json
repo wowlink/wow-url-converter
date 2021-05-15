@@ -1,6 +1,6 @@
 {
   "name": "@wowlink/wow-url-converter",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "URL conversion module for WowLink",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
