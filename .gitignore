@@ -105,6 +105,3 @@ dist
 
 # TypeScript build files
 lib/
-
-# VS code temp files
-.devcontainer/
