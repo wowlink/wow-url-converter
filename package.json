@@ -29,7 +29,7 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "@wowlink/wow-interface": "^1.3.0",
+    "@wowlink/wow-interface": "^1.4.1",
     "fuse.js": "^6.4.6"
   }
 }
